@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -14,46 +12,86 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Waste Management</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- Navigation bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container1 my-4">
-        <h2>Contact Us</h2>
-        <div class="row g-3">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-            </div>
-          </div>
-          <br>
-          <div class="d-grid col-1 mx-auto">
-            <button class="btn btn-primary" type="button">Submit</button>
-          </div>
-          <!-- <button class="btn btn-primary">Submit</button> -->
-    </div>
+    <!-- Form -->
 
-    <footer class="container">
-        <p>© 2023-2027 The Visionaries. 
-            <br><a href="#">Privacy</a> · <a href="#">Terms</a></p>
-    </footer>
+        <br>
+    <form>
+        <div class="mb-7">
+          <label for="exampleInputName" class="form-Name">Name</label>
+          <input type="Name" class="form-control" id="exampleInputName">
+        </div>
+        <div class="mb-7">
+            <label for="exampleInputSecondName" class="form-Name">Second Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1"">
+          </div>
+        <div class="mb-7">
+          <label for="exampleInputEmail" class="form-Name">Email Address</label>
+          <input type="Email" class="form-control" id="exampleInputEmail">
+        </div>
+        
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+<!-- Footer -->
+
+    <div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© 2023-2027 The visionaries, S.I.T</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img class="bi me-2" width="100" height="100"></img>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About Us</a></li>
+          </ul>
+        </footer>
+      </div>
+    
+    <!-- Footer -->
+      
+      </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
