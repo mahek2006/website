@@ -74,7 +74,7 @@ body {
   #content-text {
     font-size: 16px;
     line-height: 1.5;
-    color: brown;
+    color: black;
   }
   
   #content-text h1,
@@ -83,7 +83,7 @@ body {
   #content-text h4,
   #content-text h5,
   #content-text h6 {
-    color: green;
+    color: rgb(0, 128, 0);
   }
   
   #content-text a {
