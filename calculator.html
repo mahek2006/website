@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Footprint Calculator</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #calculator {
+      background-color: #e0f2e9; /* Pastel Green */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input {
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #80c7b7; /* Slightly darker pastel green */
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #6aa895; /* Darker on hover */
+    }
+
+    #results {
+      margin-top: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="calculator">
+    <h1>Carbon Footprint Calculator</h1>
+
+    <form id="carbonForm">
+      <label for="transportation">Transportation (km):</label>
+      <input type="number" id="transportation" name="transportation" required>
+
+      <label for="energy">Energy Consumption (kWh):</label>
+      <input type="number" id="energy" name="energy" required>
+
+      <label for="diet">Diet (kgCO2 per week):</label>
+      <input type="number" id="diet" name="diet" required>
+
+      <label for="waste">Waste (kgCO2 per week):</label>
+      <input type="number" id="waste" name="waste" required>
+
+      <button type="button" onclick="calculateCarbonFootprint()">Calculate</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script>
+    function calculateCarbonFootprint() {
+      const transportation = parseFloat(document.getElementById('transportation').value);
+      const energy = parseFloat(document.getElementById('energy').value);
+      const diet = parseFloat(document.getElementById('diet').value);
+      const waste = parseFloat(document.getElementById('waste').value);
+
+      // Add your custom calculation logic here
+      const totalCarbonFootprint = transportation + energy + diet + waste;
+
+      displayResults(totalCarbonFootprint);
+    }
+
+    function displayResults(carbonFootprint) {
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = `<p>Your estimated carbon footprint is ${carbonFootprint.toFixed(2)} kgCO2 per week.</p>`;
+    }
+  </script>
+
+</body>
+</html>

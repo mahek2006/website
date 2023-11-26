@@ -1,107 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Photo and Cards</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .main-photo {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 0 auto 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap; /* Allow cards to wrap */
+      justify-content: center; /* Center align cards */
+      gap: 20px; /* Spacing between cards */
+    }
 
-    <title>Contact Page</title>
+    /* Style for individual cards */
+    .card {
+    background-color: #fff;
+    border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px 0;
+      text-align: center;/* Add a subtle shadow */
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 50%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    /* Responsive design - adjust styles for smaller screens */
+    @media screen and (max-width: 600px) {
+      .card {
+        flex: 0 0 calc(100% - 40px); /* Full width for smaller screens */
+      }
+    }
+    .container2{
+    padding: 12px;
+    width: 100%;
+    overflow: hidden;
+    
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container2 li{
+  list-style: none;
+  display: inline;
+}
+    .container2 li a{
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 13px;
+  border-radius: 4px;
+  color: #333;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all .3s ease-in;
+}
+.container2 li a:hover{
+  background-color: #d6d6d6;
+  color: black;
+}
+  </style>
 </head>
-
 <body>
-
-    <!-- Navigation bar -->
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="images/Logo.png" alt="logo" width="70" height="70">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="3dmodel.html">3-D Model</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <!-- Main content -->
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <!-- First Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="amansonar.img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Second Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="amansonar.img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Third Card -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="amansonar.img.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-body-secondary">© 2023-2027 The Visionaries, S.I.T</p>
-
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img class="bi me-2" width="100" height="100"></img>
-        </a>
-
-        <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About Us</a></li>
+    <div class="container2">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="3dmodel.html">3D MODEL</a></li>
+          <li><a href="waste management final .pdf">PPT</a></li>
         </ul>
-    </footer>
-
-    <!-- Bootstrap JS dependencies -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+      </div>
+  <div class="container">
+    <img src="Images/photo.jpg" alt="Your Photo" class="main-photo">
+    <p>This is the content of card 2.</p>
+    <br>
+    <br>
+    <br>
+    <div class="card-container">
+      <div class="card">
+        <img src="mahek.img.jpg" alt="Card 1 Photo">
+        <h2>Card 1</h2>
+        <p>This is the content of card 1.</p>
+      </div>
+      <div class="card">
+        <img src="mahek.img.jpg" alt="Card 2 Photo">
+        <h2>Card 2</h2>
+        <p>This is the content of card 2.</p>
+      </div>
+      <div class="card">
+        <img src="mahek.img.jpg" alt="Card 3 Photo">
+        <h2>Card 3</h2>
+        <p>This is the content of card 3.</p>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>

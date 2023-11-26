@@ -1,107 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
 
-    <title>Contact Page</title>
-</head>
+    body, h1, h2, form {
+      margin: 0;
+      padding: 0;
+      font-family: 'Ubuntu', sans-serif;
+    }
 
-<body>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
 
-    <!-- Navigation bar -->
+    header {
+      color:#333;
+      text-align: center;
+      padding: 20px 0;
+    }
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    header h1 {
+      margin: 0;
+    }
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    main {
+      padding: 20px;
+    }
 
-    <!-- Form -->
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
 
-        <br>
-    <form>
-        <div class="mb-7">
-          <label for="exampleInputName" class="form-Name">Name</label>
-          <input type="Name" class="form-control" id="exampleInputName">
-        </div>
-        <div class="mb-7">
-            <label for="exampleInputSecondName" class="form-Name">Second Name</label>
-            <input type="email" class="form-control" id="exampleInputEmail1"">
-          </div>
-        <div class="mb-7">
-          <label for="exampleInputEmail" class="form-Name">Email Address</label>
-          <input type="Email" class="form-control" id="exampleInputEmail">
-        </div>
-        
-        <br>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-      
-      <!-- Form -->
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-<!-- Footer -->
+    .contact-form h2 {
+      margin-bottom: 20px;
+    }
 
-    <div>
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-body-secondary">© 2023-2027 The visionaries, S.I.T</p>
-      
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <img class="bi me-2" width="100" height="100"></img>
-          </a>
-      
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About Us</a></li>
-          </ul>
-        </footer>
-      </div>
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+    .logo2{
+        height: 45px;
+        width: 45px;
+        float: left;
+        padding-left: 20px;
+    }
+    .container2{
+    padding: 12px;
+    width: 100%;
+    overflow: hidden;
     
-<!-- Footer -->
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container2 li{
+  list-style: none;
+  display: inline;
+}
+    .container2 li a{
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 13px;
+  border-radius: 4px;
+  color: #333;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all .3s ease-in;
+}
+    .container2 li a:hover{
+  background-color: #d6d6d6;
+  color: black;
+}
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+  </style>
+</head>
+<body>
+  <header>
+
+    <div class="container2">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <li><a href="3dmodel.html">3D MODEL</a></li>
+          <li><a href="#">PPT</a></li>
+        </ul>
+      </div>
+    <h1>Contact Us</h1>
+  </header>
+  
+  <main>
+    <section class="contact-form">
+      <h2>Send us a message</h2>
+      <form action="#">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 </body>
-
 </html>
