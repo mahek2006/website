@@ -6,12 +6,38 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Podcast</title>
   <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url(Images/naja-bertolt-jensen-ex7EKxqShxk-unsplash.jpg) center/cover no-repeat fixed; /* Replace 'your-background-image.jpg' with your actual image URL */
+    }
+
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px; /* Adjust the gap as needed */
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <title>Podcast</title>
 </head>
-
 <body>
-
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MC7a-FkHQMA?si=Ga8YgHZDaLtGJqzG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5ZN7Dy9wgcY?si=TYDqHKDDZwW9uL0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rLbpacZJdx0?si=jvUfiZTR3UscGOZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qyu-fZ8BOnI?si=TiBsQhqa2mT_2SGf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
 </body>
-
 </html>
